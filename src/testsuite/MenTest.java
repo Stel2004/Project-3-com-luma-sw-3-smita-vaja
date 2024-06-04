@@ -80,27 +80,27 @@ public class MenTest extends Utility {
         Thread.sleep(2000);
 
         //Verify the text ‘Shopping Cart.’
-        String expectedText1 = "Shopping Cart";
-        String actualText1 = getTextFromTheElement(By.xpath("//div[@class='page-title-wrapper']"));
-        Assert.assertEquals("Shopping Cart", expectedText1, actualText1);
+        String expectedShippingCartText = "Shopping Cart";
+        String actualShippingCartText = getTextFromTheElement(By.xpath("//div[@class='page-title-wrapper']"));
+        Assert.assertEquals("Shopping Cart", expectedShippingCartText, actualShippingCartText);
         Thread.sleep(2000);
 
         //Verify the product name ‘Cronus Yoga Pant’
-        String expectedText2 = "Cronus Yoga Pant";
-        String actualText2 = getTextFromTheElement(By.xpath("//td[@class='col item']//a[normalize-space()='Cronus Yoga Pant']"));
-        Assert.assertEquals("Cronus Yoga Pant", expectedText2, actualText2);
+        String expectedProductName = "Cronus Yoga Pant";
+        String actualProductName = getTextFromTheElement(By.xpath("//td[@class='col item']//a[normalize-space()='Cronus Yoga Pant']"));
+        Assert.assertEquals("Cronus Yoga Pant", expectedProductName, actualProductName);
         Thread.sleep(2000);
 
         //Verify the product size ‘32’
-        String expectedText3 = "32";
-        String actualText3 = getTextFromTheElement(By.xpath("//dd[contains(text(),'32')]"));
-        Assert.assertEquals("32", expectedText3, actualText3);
+        String expectedTextSize = "32";
+        String actualTextSize = getTextFromTheElement(By.xpath("//dd[contains(text(),'32')]"));
+        Assert.assertEquals("32", expectedTextSize, actualTextSize);
         Thread.sleep(2000);
 
         //Verify the product colour ‘Black’
-        String expectedText4 = "Black";
-        String actualText4 = getTextFromTheElement(By.xpath("//dd[contains(text(),'Black')]"));
-        Assert.assertEquals("Black", expectedText4, actualText4);
+        String expectedTextColor = "Black";
+        String actualTextColor = getTextFromTheElement(By.xpath("//dd[contains(text(),'Black')]"));
+        Assert.assertEquals("Black", expectedTextColor, actualTextColor);
         Thread.sleep(2000);
     }
 
